@@ -41,9 +41,7 @@ public class F17Nov22COMP1030 {
      */
     public static double calcSpeed(double timeFalling)
     {
-        //velocity = squareroot of (distance * acceleration)
-        double height = calcHeight(timeFalling);
-        return Math.sqrt(height*9.81);
+        return 9.81*timeFalling;
     }
     
     /**
