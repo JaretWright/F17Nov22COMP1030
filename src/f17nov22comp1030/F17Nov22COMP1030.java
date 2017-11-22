@@ -30,8 +30,8 @@ public class F17Nov22COMP1030 {
      */
     public static double calcHeight(double timeFalling)
     {
-        //Height= acceleration * timeFalling^2
-        return 9.81*Math.pow(timeFalling, 2);
+        //Height= 0.5*acceleration * timeFalling^2
+        return 0.5*9.81*Math.pow(timeFalling, 2);
     }
     
     /**
@@ -41,9 +41,9 @@ public class F17Nov22COMP1030 {
      */
     public static double calcSpeed(double timeFalling)
     {
-        //velocity = squareroot of (2 * distance * acceleration)
+        //velocity = squareroot of (distance * acceleration)
         double height = calcHeight(timeFalling);
-        return Math.sqrt(2*height*9.81);
+        return Math.sqrt(height*9.81);
     }
     
     /**
